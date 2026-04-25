@@ -41,7 +41,7 @@ const HeroSection = () => (
     <div className="absolute inset-0 opacity-60">
       {/* BACKGROUND VIDEO SLOT */}
       <video autoPlay loop muted playsInline className="h-full w-full object-cover">
-        <source src="/Public/brewery-cinematic.mp4" type="video/mp4" />
+        <source src="/public/brewery-cinematic.mp4" type="video/mp4" />
       </video>
     </div>
     
@@ -75,10 +75,10 @@ export default function BreweryWebsite() {
 
   // DATA ARRAY - UPDATE IMAGE FILENAMES HERE
   const beers = [
-    { name: "Hellbender", style: "Black IPA", abv: "6.9", img: "/Public/Beer/crop (1).jpeg" },
-    { name: "Delco", style: "Modern IPA", abv: "6.0", img: "/Public/Beer/crop.jpeg" },
-    { name: "Fundilla", style: "Pale Ale", abv: "5.5", img: "/Public/Beer/Fundilla.jpeg" },
-    { name: "Susky Screamer", style: "Cream Ale", abv: "5.6", img: "/Public/Beer/Susky Screamer.jpeg" }
+    { name: "Hellbender", style: "Black IPA", abv: "6.9", img: "/public/crop (1).jpeg" },
+    { name: "Delco", style: "Modern IPA", abv: "6.0", img: "/public/crop.jpeg" },
+    { name: "Fundilla", style: "Pale Ale", abv: "5.5", img: "/public/Fundilla.jpeg" },
+    { name: "Susky Screamer", style: "Cream Ale", abv: "5.6", img: "/public/Susky Screamer.jpeg" }
   ];
 
   return (
@@ -87,7 +87,7 @@ export default function BreweryWebsite() {
       {/* NAVIGATION WITH LOGO SLOT */}
       <nav className="fixed top-0 z-50 flex w-full items-center justify-between px-8 py-4 backdrop-blur-md border-b border-white/10">
         <div className="flex items-center gap-3">
-          <img src="/Public/Beer/brewery-logo.jpeg" alt="Muddy River Logo" className="h-12 w-auto" />
+          <img src="/public/brewery-logo.jpeg" alt="Muddy River Logo" className="h-12 w-auto" />
           <div className="text-xl font-bold tracking-widest uppercase hidden sm:block">MUDDY RIVER</div>
         </div>
         
@@ -137,7 +137,7 @@ export default function BreweryWebsite() {
           <div className="relative group">
             <div className="absolute -inset-4 bg-amber-600/20 blur-xl group-hover:bg-amber-600/30 transition-all" />
             <img 
-              src="/Public/Screenshot_24-4-2026_94421_www.freepik.com.jpeg" 
+              src="/public/Screenshot_24-4-2026_94421_www.freepik.com.jpeg" 
               alt="Community" 
               className="relative grayscale hover:grayscale-0 transition-all duration-700 rounded-lg shadow-2xl border border-zinc-800"
             />
@@ -159,7 +159,7 @@ export default function BreweryWebsite() {
       {/* FOOTER */}
       <footer className="bg-black border-t border-zinc-900 py-12 px-8 text-center">
         <div className="flex justify-center gap-6 mb-6">
-           <img src="/Public/brewery-logo.jpeg" alt="Footer Logo" className="h-8 w-auto opacity-50 grayscale" />
+           <img src="/public/brewery-logo.jpeg" alt="Footer Logo" className="h-8 w-auto opacity-50 grayscale" />
         </div>
         <p className="text-zinc-600 text-xs tracking-widest uppercase">
           © 2026 MUDDY RIVER FARM BREWERY — DESIGNED FOR THE HEADWATERS.
