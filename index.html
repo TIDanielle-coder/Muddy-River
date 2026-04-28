@@ -7,6 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
     <style>
+        /* Smooth scrolling makes the "Explore Taps" jump feel professional */
+        html {
+            scroll-behavior: smooth;
+        }
         body { background-color: black; color: white; font-family: sans-serif; }
         .hero-video { filter: brightness(0.6); }
         .glass-nav { backdrop-filter: blur(10px); background: rgba(0,0,0,0.7); }
@@ -20,9 +24,9 @@
             <div class="text-xl font-bold tracking-widest uppercase">MUDDY RIVER</div>
         </div>
         <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
-            <a href="#" class="hover:text-amber-500">Taps</a>
-            <a href="#" class="hover:text-amber-500">Locations</a>
-            <a href="#" class="hover:text-amber-500">Events</a>
+            <a href="#taps" class="hover:text-amber-500">Taps</a>
+            <a href="https://www.muddyriverfarmbrewery.com/locations" target="_blank" class="hover:text-amber-500">Locations</a>
+            <a href="https://www.muddyriverfarmbrewery.com/events" target="_blank" class="hover:text-amber-500">Events</a>
         </div>
     </nav>
 
@@ -39,13 +43,17 @@
                 From the headwaters of the Susquehanna to your glass.
             </p>
             <div class="mt-8 flex justify-center gap-4">
-                <button class="bg-amber-600 px-8 py-4 font-bold hover:scale-105 transition-transform">EXPLORE TAPS</button>
-                <button class="border border-white px-8 py-4 font-bold hover:bg-white hover:text-black transition-all">OUR STORY</button>
+                <a href="#taps" class="bg-amber-600 px-8 py-4 font-bold hover:scale-105 transition-transform inline-block">
+                    EXPLORE TAPS
+                </a>
+                <a href="https://www.muddyriverfarmbrewery.com/our-story" target="_blank" class="border border-white px-8 py-4 font-bold hover:bg-white hover:text-black transition-all inline-block">
+                    OUR STORY
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-8 max-w-7xl mx-auto">
+    <section id="taps" class="py-24 px-8 max-w-7xl mx-auto">
         <h2 class="text-5xl font-bold uppercase italic mb-12">Fresh on Tap</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
@@ -82,3 +90,4 @@
 
 </body>
 </html>
+
