@@ -18,10 +18,10 @@
 </head>
 <body>
 
-    <nav class="fixed top-0 z-50 w-full flex items-center justify-between px-8 py-4 glass-nav border-b border-white/10">
+    <nav class="fixed top-0 z-50 w-full flex items-center justify-between px-4 sm:px-8 py-4 glass-nav border-b border-white/10">
         <div class="flex items-center gap-3">
-            <img src="brewery-logo.jpeg" alt="Logo" class="h-10 w-auto">
-            <div class="text-xl font-bold tracking-widest uppercase">MUDDY RIVER</div>
+            <img src="brewery-logo.jpeg" alt="Logo" class="h-8 sm:h-10 w-auto">
+            <div class="text-lg sm:text-xl font-bold tracking-widest uppercase hidden sm:block">MUDDY RIVER</div>
         </div>
         <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
             <a href="#taps" class="hover:text-amber-500">Taps</a>
@@ -35,56 +35,56 @@
             <source src="brewery-cinematic.mp4" type="video/mp4">
         </video>
         
-        <div class="relative z-10 px-6">
-            <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tighter">
+        <div class="relative z-10 px-4 sm:px-6">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter">
                 Muddy River <span class="text-amber-500">2.0</span>
             </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+            <p class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-gray-300">
                 From the headwaters of the Susquehanna to your glass.
             </p>
-            <div class="mt-8 flex justify-center gap-4">
-                <a href="#taps" class="bg-amber-600 px-8 py-4 font-bold hover:scale-105 transition-transform inline-block">
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#taps" class="bg-amber-600 px-6 sm:px-8 py-3 sm:py-4 font-bold hover:scale-105 transition-transform inline-block text-center">
                     EXPLORE TAPS
                 </a>
-                <a href="https://www.muddyriverfarmbrewery.com/our-story" target="_blank" class="border border-white px-8 py-4 font-bold hover:bg-white hover:text-black transition-all inline-block">
+                <a href="https://www.muddyriverfarmbrewery.com/our-story" target="_blank" class="border border-white px-6 sm:px-8 py-3 sm:py-4 font-bold hover:bg-white hover:text-black transition-all inline-block text-center">
                     OUR STORY
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="taps" class="py-24 px-8 max-w-7xl mx-auto">
-        <h2 class="text-5xl font-bold uppercase italic mb-12">Fresh on Tap</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section id="taps" class="py-12 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-5xl font-bold uppercase italic mb-8 sm:mb-12">Fresh on Tap</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             
-            <div class="bg-zinc-900 p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform">
-                <img src="crop.jpeg" alt="Beer" class="w-full h-48 object-cover rounded mb-4">
-                <h3 class="text-2xl font-bold uppercase">Hellbender</h3>
-                <p class="text-zinc-500">Black IPA | 6.9%</p>
+            <div class="bg-zinc-900 p-4 sm:p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform rounded-lg">
+                <img src="crop.jpeg" alt="Hellbender Beer" class="w-full h-32 sm:h-48 object-cover rounded mb-4" onerror="this.src='brewery-logo.jpeg'">
+                <h3 class="text-xl sm:text-2xl font-bold uppercase">Hellbender</h3>
+                <p class="text-zinc-500 text-sm sm:text-base">Black IPA | 6.9%</p>
             </div>
 
-            <div class="bg-zinc-900 p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform">
-                <img src="crop(1).jpeg" alt="Beer" class="w-full h-48 object-cover rounded mb-4">
-                <h3 class="text-2xl font-bold uppercase">Delco</h3>
-                <p class="text-zinc-500">Modern IPA | 6.0%</p>
+            <div class="bg-zinc-900 p-4 sm:p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform rounded-lg">
+                <img src="crop (1).jpeg" alt="Delco Beer" class="w-full h-32 sm:h-48 object-cover rounded mb-4" onerror="this.src='brewery-logo.jpeg'">
+                <h3 class="text-xl sm:text-2xl font-bold uppercase">Delco</h3>
+                <p class="text-zinc-500 text-sm sm:text-base">Modern IPA | 6.0%</p>
             </div>
 
-            <div class="bg-zinc-900 p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform">
-                <img src="Fundilla.jpeg" alt="Beer" class="w-full h-48 object-cover rounded mb-4">
-                <h3 class="text-2xl font-bold uppercase">Fundilla</h3>
-                <p class="text-zinc-500">Pale Ale | 5.5%</p>
+            <div class="bg-zinc-900 p-4 sm:p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform rounded-lg">
+                <img src="Fundilla.jpeg" alt="Fundilla Beer" class="w-full h-32 sm:h-48 object-cover rounded mb-4" onerror="this.src='brewery-logo.jpeg'">
+                <h3 class="text-xl sm:text-2xl font-bold uppercase">Fundilla</h3>
+                <p class="text-zinc-500 text-sm sm:text-base">Pale Ale | 5.5%</p>
             </div>
 
-            <div class="bg-zinc-900 p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform">
-                <img src="Susky Screamer.jpeg" alt="Beer" class="w-full h-48 object-cover rounded mb-4">
-                <h3 class="text-2xl font-bold uppercase">Susky Screamer</h3>
-                <p class="text-zinc-500">Cream Ale | 5.2%</p>
+            <div class="bg-zinc-900 p-4 sm:p-6 border-l-4 border-amber-500 hover:-translate-y-2 transition-transform rounded-lg">
+                <img src="Susky Screamer.jpeg" alt="Susky Screamer Beer" class="w-full h-32 sm:h-48 object-cover rounded mb-4" onerror="this.src='brewery-logo.jpeg'">
+                <h3 class="text-xl sm:text-2xl font-bold uppercase">Susky Screamer</h3>
+                <p class="text-zinc-500 text-sm sm:text-base">Cream Ale | 5.2%</p>
             </div>
 
         </div>
     </section>
 
-    <footer class="py-12 border-t border-zinc-900 text-center opacity-50 text-xs tracking-widest">
+    <footer class="py-8 sm:py-12 border-t border-zinc-900 text-center opacity-50 text-xs sm:text-sm tracking-widest">
         © 2026 MUDDY RIVER FARM BREWERY — DESIGNED FOR THE HEADWATERS.
     </footer>
 
